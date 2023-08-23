@@ -1,0 +1,1 @@
+export const sameName = "está mudou de nome"
