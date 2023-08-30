@@ -86,7 +86,10 @@
 [35m[39m
 30-08-2023 18:52:41:5241 - [32minfo[39m: [32mConectado ao banco de dados com sucesso![39m
 30-08-2023 18:52:42:5242 - [32minfo[39m: [32mAplicação está funcionando na porta 3000[39m
+<<<<<<< HEAD
 30-08-2023 19:11:38:1138 - [32minfo[39m: [32mConectado ao banco de dados com sucesso![39m
 30-08-2023 19:11:38:1138 - [32minfo[39m: [32mAplicação está funcionando na porta 3000[39m
 30-08-2023 19:11:38:1138 - [35mhttp[39m: [35mPOST /api/movie 201 151 - 7316.226 ms[39m
 [35m[39m
+=======
+>>>>>>> 3dd0bb7f07279188b5b3810ba3ff910c5a7b6baf
