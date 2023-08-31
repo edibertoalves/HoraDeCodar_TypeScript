@@ -6,3 +6,5 @@
 30-08-2023 16:03:49:349 - [31merror[39m: [31mErro: querySrv ENOTFOUND _mongodb._tcp.cluster0.huj9sk5ffff.mongodb.net[39m
 30-08-2023 16:03:53:353 - [31merror[39m: [31mnão foi possível conectar ao banco de dados[39m
 30-08-2023 16:03:53:353 - [31merror[39m: [31mErro: querySrv ENOTFOUND _mongodb._tcp.cluster0.huj9sk5ffff.mongodb.net[39m
+31-08-2023 18:23:19:2319 - [31merror[39m: [31mErro no sistema: Cast to ObjectId failed for value "5" (type string) at path "_id" for model "Movie"[39m
+31-08-2023 19:26:49:2649 - [31merror[39m: [31mErro no sistema: data is not defined[39m
