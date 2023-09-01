@@ -61,19 +61,18 @@ export async function deleteMovieById(req: Request, res: Response, next: NextFun
 
 export async function updateMovie(req: Request, res: Response) {
     try {
-        const id = req.params.id
+        const id = req.params.id;
         const data = req.body
-        const movie = await MovieModel.findById(id)
+        const movie = await MovieModel.findById(id);        
 
         if (!movie) {
-            return res.status(404).json({ error: "O filme não existe" })
+            return res.status(404).json({ error: "O filme não existe." });
         }
+               
+        await MovieModel.updateOne({ _id: id }, data);
 
-        await movie.updateOne({ _id: id }, data)
-        return res.status(200).json(data)        
-
-    } catch (e) {
-        Logger.error(`Erro no sistema: ${(e as Error).message}`)
-        return res.status(500).json({ error: "Por favor, tente mais tarde." })
+        return res.status(200).json(data);
+    } catch (e: any) {
+        Logger.info(`Erro no sistema: ${e.message}`);
     }
 }
