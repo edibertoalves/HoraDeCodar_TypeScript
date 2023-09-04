@@ -13,6 +13,8 @@ app.use(express.json());
 // routes
 import router from "./router";
 
+app.use("/api/", router);
+
 // Logger
 import Logger from "../config/logger"
 
@@ -20,7 +22,6 @@ import Logger from "../config/logger"
 import morganMiddleware from './middleware/morganMiddleware';
 
 app.use(morganMiddleware);
-app.use("/api/", router);
 
 // app port
 const port = config.get<number>("port");
